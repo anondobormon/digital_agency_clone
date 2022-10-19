@@ -1,0 +1,11 @@
+export { default as About } from "./About/About";
+export { default as Blogs } from "./Blogs/Blogs";
+export { default as Contact } from "./Contact/Contact";
+export { default as Contributor } from "./Contributor/Contributor";
+export { default as Footer } from "./Footer/Footer";
+export { default as Hero } from "./Hero/Hero";
+export { default as Navbar } from "./Navbar/Navbar";
+export { default as Services } from "./Service/Services";
+export { default as Skills } from "./Skills/Skills";
+export { default as SuccessfulWork } from "./SuccessfulWork/SuccessfulWork";
+export { default as Testimonial } from "./Testimonial/Testimonial";

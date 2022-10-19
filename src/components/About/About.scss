@@ -1,0 +1,36 @@
+.about {
+  min-height: 80vh;
+  .grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+
+    .left {
+      height: fit-content;
+      position: relative;
+      img {
+        width: 350px;
+        border-radius: 45px;
+        &:nth-child(2) {
+          position: absolute;
+          right: 0;
+          top: 55%;
+        }
+        &:nth-child(3) {
+          position: absolute;
+          left: 80px;
+          top: 88%;
+          z-index: -1;
+          width: 280px;
+        }
+        &:nth-child(4) {
+          position: absolute;
+          right: 60px;
+          top: 5%;
+          transform: rotate(180deg);
+          z-index: -1;
+          width: 280px;
+        }
+      }
+    }
+  }
+}

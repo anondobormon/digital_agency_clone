@@ -1,0 +1,88 @@
+@import "../../utils/variable.scss";
+.contact {
+  padding: 80px 0;
+  .flex {
+    align-items: center;
+    .left {
+      flex: 1.6;
+      .addresses {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+          min-width: 210px;
+          position: relative;
+          padding: 15px;
+
+          h2 {
+            color: $base_color_9;
+            font-size: 24px;
+            margin-bottom: 5px;
+          }
+        }
+        .vertical_bar {
+          width: 3px;
+          height: 45px;
+          opacity: 0.4;
+          background: $base_color_10;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      padding: 50px;
+      border-radius: 5px;
+      background: $base_color_8;
+      box-shadow: $shadow;
+      h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p {
+        text-align: center;
+      }
+
+      form {
+        .input_group {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          padding: 10px 15px;
+          border: 1px solid rgba(0, 0, 0, 0.11);
+          border-radius: 2px;
+
+          label {
+            font-size: 18px;
+            color: $base_color_10;
+          }
+          input {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 5px;
+            background: rgba(0, 0, 0, 0.11);
+          }
+        }
+        .checkbox {
+          font-size: 16px;
+          margin-left: 10px;
+          cursor: pointer;
+
+          span {
+            color: $base_color_7;
+            text-decoration: underline;
+            font-weight: 600;
+            transition: all 0.3s;
+
+            &:hover {
+              color: $base_color_9;
+            }
+          }
+        }
+      }
+    }
+  }
+}

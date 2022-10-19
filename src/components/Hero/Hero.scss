@@ -1,0 +1,295 @@
+@import "../../utils/variable.scss";
+
+.hero {
+  min-height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .hero_bg {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #f9f9f9;
+    z-index: -1;
+  }
+
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+
+    .left {
+      .video {
+        background: $base_color_8;
+        color: $base_color_9;
+        font-weight: 700;
+        font-size: $font_size_small;
+        border: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+        .video_icon {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          border: 3px solid $base_color_6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          .icon_wrapper {
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            padding: 10px;
+            background: $base_color_6;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .right {
+      padding-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .module {
+        border-radius: 10px;
+        box-shadow: $shadow;
+        background: white;
+        padding: 30px 35px 30px 50px;
+        position: relative;
+        margin-right: 45px;
+
+        h3 {
+          font-weight: 600;
+          font-size: $font_size_medium;
+
+          span {
+            color: $base_color_6;
+          }
+        }
+
+        .members {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          width: 100%;
+
+          img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: 2px solid $base_color_8;
+
+            &:nth-child(2) {
+              margin-left: -23px;
+            }
+            &:nth-child(3) {
+              margin-left: -23px;
+            }
+          }
+          p {
+            font-weight: 600;
+            font-size: $font_size_small;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            span {
+              transition: all 0.3s;
+            }
+
+            &:hover {
+              color: $base_color_7;
+
+              span {
+                transform: translateX(5px);
+              }
+            }
+          }
+        }
+        .members_icon_wrapper {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $base_color_7;
+          position: absolute;
+          left: -35px;
+          top: 50px;
+          color: $base_color_8;
+        }
+      }
+    }
+  }
+
+  .hero_img_1,
+  .hero_img_2 {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    .shape1 {
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
+
+    .avatar_wrapper {
+      right: 250px;
+      top: 135px;
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      border: 10px solid $base_color_8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .icon_wrapper {
+        top: -20px;
+        left: 50px;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        transform: rotate(-20deg);
+        background: white;
+        color: rgb(51, 184, 255);
+        box-shadow: $shadow;
+      }
+    }
+  }
+
+  .hero_img_2 {
+    top: 180px;
+
+    .avatar_wrapper1 {
+      right: 10px;
+      top: 300px;
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      border: 10px solid $base_color_8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .icon_wrapper {
+        top: 70px;
+        left: -30px;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        background: white;
+        color: rgb(51, 184, 255);
+        box-shadow: $shadow;
+      }
+    }
+    .avatar_wrapper2 {
+      right: 240px;
+      top: 525px;
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      border: 10px solid $base_color_8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .icon_wrapper {
+        top: 20px;
+        left: -10px;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        background: white;
+        color: rgb(51, 184, 255);
+        box-shadow: $shadow;
+      }
+    }
+  }
+  .bigger_text {
+    font-weight: 600;
+    font-size: $font_size_bigger;
+    color: $base_color_9;
+    max-width: 620px;
+    position: relative;
+    span {
+      color: $base_color_7;
+    }
+
+    ::after {
+      content: url("../../assets/under.png");
+      position: absolute;
+      right: 15px;
+      bottom: -40px;
+    }
+  }
+  .big_text {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}

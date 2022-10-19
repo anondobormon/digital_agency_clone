@@ -1,0 +1,29 @@
+@import "../../utils/variable.scss";
+.contributor {
+  margin: -100px auto 0 auto;
+
+  .container {
+    padding: 50px 70px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    background: $base_color_8;
+    h3 {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 45px;
+    }
+
+    .flex {
+      gap: 20px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

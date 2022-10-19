@@ -1,0 +1,66 @@
+@import "../../utils/variable.scss";
+
+.successful_work {
+  padding: 100px 0;
+
+  .flex {
+    justify-content: space-between;
+  }
+  .left {
+    flex: 1;
+
+    .counter_block {
+      max-width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        width: 230px;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .counter {
+          font-size: 40px;
+          font-weight: 700;
+
+          span {
+            color: $base_color_7;
+          }
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          border-bottom: 1px solid #6f6f6f69;
+        }
+        &:nth-child(1),
+        &:nth-child(3) {
+          border-right: 1px solid #6f6f6f69;
+        }
+      }
+    }
+
+    .send_email {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      button {
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-right: 15px solid $base_color_6;
+      border-top: 15px solid $base_color_6;
+      border-top-left-radius: 50%;
+      //   border-bottom-right-radius: 50%;
+    }
+  }
+}

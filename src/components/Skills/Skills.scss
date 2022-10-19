@@ -1,0 +1,154 @@
+@import "../../utils/variable.scss";
+
+.skills {
+  height: fit-content;
+
+  .flex {
+    // align-items: center;
+    gap: 0;
+
+    .left {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+
+      .overlay {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-image: linear-gradient(
+          -62deg,
+          rgb(0, 238, 235) 1%,
+          rgb(32, 166, 243) 53%,
+          rgb(63, 93, 251) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+        opacity: 0.5;
+      }
+      .icon_wrapper {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.564);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 111;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  .right {
+    background: #ecf7ff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+    .content {
+      max-width: 500px;
+
+      .skill_slider {
+        .item {
+          margin-top: 30px;
+          .sub_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .progress_bar {
+            width: 100%;
+            height: 8px;
+            margin-top: 15px;
+            background-color: #e8e8e8;
+            position: relative;
+
+            &::before {
+              content: "";
+              top: 0;
+              left: 0;
+              width: 92%;
+              height: 100%;
+              z-index: 1;
+              position: absolute;
+              background-image: linear-gradient(
+                -62deg,
+                rgb(0, 238, 235) 1%,
+                rgb(32, 166, 243) 53%,
+                rgb(63, 93, 251) 100%
+              );
+            }
+          }
+
+          &:nth-child(2) {
+            .progress_bar {
+              &::before {
+                width: 82%;
+              }
+            }
+          }
+          &:nth-child(3) {
+            .progress_bar {
+              &::before {
+                width: 98%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .members {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+
+      img {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid $base_color_8;
+
+        &:nth-child(2) {
+          margin-left: -23px;
+        }
+        &:nth-child(3) {
+          margin-left: -23px;
+        }
+      }
+      p {
+        font-weight: 600;
+        font-size: $font_size_small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        span {
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          color: $base_color_7;
+
+          span {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+  }
+}
